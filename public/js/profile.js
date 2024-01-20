@@ -1,18 +1,21 @@
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM content loaded');
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#blog-name').value.trim();
-  const content = document.querySelector('#blog-desc').value.trim();
+  const title = document.querySelector('#blog-title').value.trim();
+  const content = document.querySelector('#blog-content').value.trim();
 
-  if (name && content) {
+  if (title && content) {
+    console.log('Before fetch');
     const response = await fetch(`/api/blog`, {
       method: 'POST',
-      body: JSON.stringify({ name,  content }),
+      body: JSON.stringify({ title,  content }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
-
+    console.log('After fetch');
     if (response.ok) {
       document.location.replace('/profile');
     } else {
@@ -44,3 +47,4 @@ document
 document
   .querySelector('.blog-list')
   .addEventListener('click', delButtonHandler);
+});
