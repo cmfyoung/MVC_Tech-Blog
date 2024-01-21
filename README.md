@@ -1,33 +1,33 @@
 # MVC_Tech-Blog
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## License 
- https://opensource.org/license/mit/
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## License 
+https://opensource.org/license/mit/
 
 
-  ## Description
-  Built a CMS-Style blog site where developers can publish their blog posts and comment on other developer's posts as well. 
+## Description
+Built a CMS-Style blog site where developers can publish their blog posts and comment on other developer's posts as well. 
 
 
 
-  ## Table of Contents 
+## Table of Contents 
   
-  - [User Story](#story)
-  - [Acceptance Criteria](#acceptance)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
+- [User Story](#story)
+- [Acceptance Criteria](#acceptance)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-  ## User Story
+## User Story
 
-  As A developer who writes about tech 
-  I WANT a CMS-style blog site 
-  SO THAT I can publish articles, blog posts, and my thoughts and opinions
+As A developer who writes about tech 
+I WANT a CMS-style blog site 
+SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-  ---
+---
   
-  ## Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
@@ -62,47 +62,48 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
-  ---
 
-  ## Installation 
+---
 
-  N/A
+## Installation 
+
+N/A
 
 
-  ---
+---
   
-  ## Usage
+## Usage
   
-  Insert Screenshots here
+Insert Screenshots here
 
 
-  ## Tests
+## Tests
   
-  N/A
+N/A
 
 
-  ## Credits
+## Credits
   
-  I want to thank Andrew Layendecker, my group project teammates Mark Forte and Tyler Cavanaugh, and my tutors Jacob Carver and Wesley Clements. 
+I want to thank Andrew Layendecker, my group project teammates Mark Forte and Tyler Cavanaugh, and my tutors Jacob Carver and Wesley Clements. 
 
   
-  ## License
-  MIT
+## License
+MIT
 
-  #License used for this project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+#License used for this project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
   
-  ---
+---
 
-  ##Contact 
-  Github Repository : https://github.com/cmfyoung/MVC_Tech-Blog
-
-
-  Website URL : https://tech-blog-mania-00c5095b0f1d.herokuapp.com/
+##Contact 
+Github Repository : https://github.com/cmfyoung/MVC_Tech-Blog
 
 
-  Author: Chris Young
+Website URL : https://tech-blog-mania-00c5095b0f1d.herokuapp.com/
 
 
-  Email: cmfyoung7@gmail.com
+Author: Chris Young
+
+
+Email: cmfyoung7@gmail.com
 
 
