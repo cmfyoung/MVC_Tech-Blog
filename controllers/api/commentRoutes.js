@@ -29,6 +29,7 @@ router.get('/:id', withAuth, async (req, res) => {
 });
 
 router.post('/', withAuth, async (req, res) => {
+   console.log ('llama hats')
     try {
         const newComment = await Comment.create({
             ...req.body,
@@ -37,7 +38,7 @@ router.post('/', withAuth, async (req, res) => {
 
         res.status(200).json(newComment);
     } catch (err) {
-        console.log(err);
+        console.error(err);
         res.status(400).json(err);
     }
 });
@@ -61,7 +62,6 @@ router.delete('/:id', withAuth, async (req, res) => {
         const commentData = await Comment.destroy({
             where: {
                 id: req.params.id,
-                user_id: req.session.user_id,
             },
         });
 

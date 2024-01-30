@@ -5,3 +5,35 @@
   <p>{{content}}</p>
   <p>Created by {{user.name}} on {{format_date created_at}}</p>
 </div>
+
+{{#each comments as | comment |}} 
+
+<div class="text-center">
+  <h3>{{comment.title}}</h3>
+  <p>{{comment.content}}</p>
+  <button id="{{comment.id}}">Delete</button>
+</div>
+
+{{/each}}
+
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Comment:</h3>
+
+    <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment-title">Title:</label>
+        <input class="form-input" type="text" id="comment-title" name="comment-title" />
+      </div>
+      <div class="form-group">
+        <label for="comment-content">Content:</label>
+        <textarea class="form-input" id="comment-content" name="comment-content"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+<script src="/js/comment.js"></script>
