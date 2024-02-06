@@ -6,12 +6,12 @@
   <p>Created by {{user.name}} on {{format_date created_at}}</p>
 </div>
 
-{{#each comments as | comment |}} 
+{{#each comments}} 
 
 <div class="text-center">
-  <h3>{{comment.title}}</h3>
-  <p>{{comment.content}}</p>
-  <button id="{{comment.id}}">Delete</button>
+  <h3>{{title}}</h3>
+  <p>{{content}}</p>
+  <button id="{{id}}">Delete</button>
 </div>
 
 {{/each}}

@@ -14,13 +14,13 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/:id', withAuth, async (req, res) => {
         try {
-            const CommentData = await Comment.findAll({
+            const CommentData = await Comment.findOne({
             where: {
                 user_id: req.params.id,
             },
         });
 
-        res.json(commentData);
+        res.json(CommentData);
     }
         catch (err) {
         console.error(err);
@@ -28,11 +28,19 @@ router.get('/:id', withAuth, async (req, res) => {
     }
 });
 
-router.post('/', withAuth, async (req, res) => {
-   console.log ('llama hats')
+router.post('/:blog_id', withAuth, async (req, res) => {
+    console.log('Received Post');
     try {
+        const { title, content } = req.body;
+
+        if (!title || !content) {
+            return res.status(400).json({ message: 'Title and content are required for a comment.' });
+        }
+
         const newComment = await Comment.create({
-            ...req.body,
+            title,
+            content,
+            blog_id: req.params.blog_id,
             user_id: req.session.user_id,
         });
 
@@ -42,6 +50,7 @@ router.post('/', withAuth, async (req, res) => {
         res.status(400).json(err);
     }
 });
+
 
 router.put('/:id', withAuth, async (req, res) => {
     try {
