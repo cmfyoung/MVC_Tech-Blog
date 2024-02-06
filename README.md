@@ -74,7 +74,11 @@ N/A
   
 ## Usage
   
-Insert Screenshots here
+![Screen Shot 2024-02-06 at 4 04 07 PM](https://github.com/cmfyoung/MVC_Tech-Blog/assets/150183426/5eec4b6a-f28d-4110-8bd4-4a36608b36e3)
+![Screen Shot 2024-02-06 at 4 04 30 PM](https://github.com/cmfyoung/MVC_Tech-Blog/assets/150183426/e5788221-2573-4818-a475-6621f19a7aff)
+![Screen Shot 2024-02-06 at 4 04 22 PM](https://github.com/cmfyoung/MVC_Tech-Blog/assets/150183426/34801c4e-b449-404d-ab78-1113ee73a7d5)
+
+
 
 
 ## Tests
@@ -84,7 +88,7 @@ N/A
 
 ## Credits
   
-I want to thank Andrew Layendecker, my group project teammates Mark Forte and Tyler Cavanaugh, and my tutors Jacob Carver and Wesley Clements. 
+I want to thank Andrew Layendecker, my group project teammates Mark Forte and Tyler Cavanaugh, and my tutors Jacob Carver, Eric Sayer, and Wesley Clements. 
 
   
 ## License
@@ -98,7 +102,7 @@ MIT
 Github Repository : https://github.com/cmfyoung/MVC_Tech-Blog
 
 
-Website URL : https://tech-blog-mania-00c5095b0f1d.herokuapp.com/
+Website URL : https://techno-blogathon-b326e66ce742.herokuapp.com/
 
 
 Author: Chris Young
