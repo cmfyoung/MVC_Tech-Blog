@@ -37,7 +37,7 @@ router.get('/blog/:id', async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ['title', 'content'],
+          attributes: ['id', 'title', 'content'],
         }
       ],
     });
